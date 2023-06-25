@@ -1,0 +1,30 @@
+@import url(./reset.css);
+@import url(./globalStyles.css);
+@import url(./buttons.css);
+@import url(./cadastre.css);
+
+.petinfo__container{
+justify-content: center;
+}
+.cadastre__info{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+    margin-top:16px ;
+    text-align: center;
+}
+.cadastre__info p{
+    text-align-last: center
+}
+.cadastre__container{
+     width: 420px;
+}
+@media (min-width: 100px) and (max-width: 700px){
+    .petinfo__container{
+        order: 2;
+    }
+    .cadastre__container{
+        order: 1;
+    }
+}

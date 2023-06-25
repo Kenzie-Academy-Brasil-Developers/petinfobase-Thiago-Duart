@@ -1,0 +1,11 @@
+.text-1{
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+p,label{
+    font-family: 'Prompt', sans-serif;
+}
+
+.text-color{
+    color: var(--brand100);
+}
