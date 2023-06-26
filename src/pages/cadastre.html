@@ -8,43 +8,43 @@
 </head>
 <body>
     <div class="container">
-
+        
         
         <div class="cadastre__container">
             <section class="">
                 
                 <div class="cadastre__header">
                     <h2 class="text-1">Cadastro</h2>
-                    <p>voltar para o login</p>
+                    <p class="redirectsLogin">voltar para o login</p>
                 </div>
                 
                 <form action="">
                     <label class="" for="user">Usuário</label>
-                    <input type="text" class="" placeholder="Digite seu usuário aqui">
+                    <input type="text" name="user" placeholder="Digite seu usuário aqui" required>
                     
                     <label class="" for="user">Email</label>
-                    <input type="text" class="" placeholder="Digite seu email aqui">
+                    <input type="text" name="email" placeholder="Digite seu email aqui" required>
                     
                     <label class="" for="user">link da foto do perfil</label>
-                    <input type="text" class="" placeholder="Insira o link aqui ">
+                    <input type="text" name="avatar" placeholder="Insira o link aqui " required>
                     
                     <label class="" for="user">senha</label>
-                    <input type="text" class="" placeholder="digite sua senha aqui">
+                    <input type="password" name="password" placeholder="digite sua senha aqui" required>
                     
                     <div>
-                        <button class="confirm__button">Cadastrar</button>
-                        <button class="redirect-edit__button ">Voltar para o login</button>
+                        <button id="btnResgister" class="confirm__button">Cadastrar</button>
                     </div>
-                
                 </form>
+                <button class="redirect-edit__button redirectsLogin" id="btnredirectConfig">Voltar para o login</button>
             </section>
         </div>
         <section class="petinfo__container">
             <h2 class="text-1">Petinfo</h2>
-<h2 class="text-color text-1">Ooooooba!</h2>
+            <h2 class="text-color text-1">Ooooooba!</h2>
             <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimeto</p>
             <img src="../img/Group 14.png" alt="image pet">
         </section>
     </div>
+    <script src="../scripts/cadastre.js"></script>
     </body>
 </html>

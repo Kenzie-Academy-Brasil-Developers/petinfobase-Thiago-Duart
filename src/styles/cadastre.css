@@ -42,7 +42,7 @@ form div{
     margin-top: 20px;
     gap: 16px;
 }
-form input {
+form input{
     border: none;
     background-color: var(--gray700);
     border-radius: 4px;
@@ -62,7 +62,12 @@ input::placeholder{
     width: 310px;
     height: 300px;
 }
-
+.redirectsLogin{
+    cursor: pointer;
+}
+#btnredirectConfig{
+    width: 100%;
+}
 
 @media (min-width: 100px) and (max-width: 700px){
     .container{
