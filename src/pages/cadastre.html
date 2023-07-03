@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/cadastre.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,16 +21,16 @@
                 
                 <form action="">
                     <label class="" for="user">Usuário</label>
-                    <input type="text" name="user" placeholder="Digite seu usuário aqui" required>
+                    <input type="text" name="username" placeholder="Digite seu usuário aqui"  class="inputs">
                     
                     <label class="" for="user">Email</label>
-                    <input type="text" name="email" placeholder="Digite seu email aqui" required>
+                    <input type="text" name="email" placeholder="Digite seu email aqui"  class="inputs">
                     
                     <label class="" for="user">link da foto do perfil</label>
-                    <input type="text" name="avatar" placeholder="Insira o link aqui " required>
+                    <input type="text" name="avatar" placeholder="Insira o link aqui "  class="inputs">
                     
                     <label class="" for="user">senha</label>
-                    <input type="password" name="password" placeholder="digite sua senha aqui" required>
+                    <input type="password" name="password" placeholder="digite sua senha aqui" class="inputs">
                     
                     <div>
                         <button id="btnResgister" class="confirm__button">Cadastrar</button>
@@ -45,6 +46,7 @@
             <img src="../img/Group 14.png" alt="image pet">
         </section>
     </div>
-    <script src="../scripts/cadastre.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../scripts/cadastre.js"></script>
     </body>
 </html>

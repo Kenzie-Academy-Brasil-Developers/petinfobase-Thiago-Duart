@@ -1,0 +1,14 @@
+
+.publication__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.publication__header div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.publication__img{
+    width: 50px;
+}

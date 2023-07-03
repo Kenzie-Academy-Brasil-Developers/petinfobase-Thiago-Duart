@@ -28,3 +28,6 @@ justify-content: center;
         order: 1;
     }
 }
+.inputs{
+    padding: 0 10px;
+}

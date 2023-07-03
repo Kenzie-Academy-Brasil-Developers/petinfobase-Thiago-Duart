@@ -1,0 +1,68 @@
+
+dialog{
+    overflow: hidden;
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+}
+.container__dialog{
+    width: 100%;
+    padding: 30px;
+}
+
+.dialog__header h1{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 0 20px;
+}
+.dialog__form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.dialog__form div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.dialog__form input{
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid var(--gray500);
+    padding: 0 10px;
+}
+.dialog__form textarea{
+   border: none;
+   border-radius: 4px;
+   border: 1px solid var(--gray500);
+   resize: none;
+   padding: 0 10px;
+}
+input:focus ,textarea:focus{
+   outline: none;
+ } 
+
+ #dialogDelte{
+    font-family: 'Prompt', sans-serif;
+ }
+ .delete__container{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+ }
+ .dialog__header{
+    display: flex;
+    justify-content: space-between;
+ }
+ .dialog__texts{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+ }
+
+ #showPublication{
+    border: none;
+ }
+ .publication__container{
+    border: none;
+ }
