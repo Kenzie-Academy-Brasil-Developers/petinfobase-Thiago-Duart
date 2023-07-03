@@ -45,12 +45,13 @@ function registrationData() {
         count = 0 
         toast('por favor preencha os campos necessàrios',"#8B0000")
     }else{
-      createUser(cadastre);
+      createUser(cadastre);   
     }
     });
 }
 
 async function createUser(user) {
+  const spiner = document.querySelector('.lds-ring')
   const options = {
     method: "POST",
     headers: {
@@ -62,11 +63,14 @@ async function createUser(user) {
   .then(async (res) => {
     const message = await res.json();
     if (res.ok) {
+      spiner.classList.remove('display')
      toast('Usuario cadastrado com sucesso', "#96c93d");
      setTimeout(() => {
       location.replace("../../");
     }, 2000);
+    // return true
     } else {
+      spiner.classList.add('display')
        throw new Error(message.message)
     }
   })

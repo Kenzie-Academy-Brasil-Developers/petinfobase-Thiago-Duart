@@ -14,6 +14,7 @@ function toast(menssage, color) {
   }
 
 async function login(){
+  const spiner = document.querySelector('.lds-ring')
     let loginUser = {}
     const inputsLogin = document.querySelectorAll('input')
     const btnAccess = document.querySelector('.btnAccess')
@@ -34,10 +35,14 @@ async function login(){
         .then(async(res)=>{
             const responseToken = await res.json()
             if(res.ok){
+                spiner.classList.remove('displaySpiner')
                 const token = JSON.stringify(responseToken)
                 localStorage.setItem('tokenUser', token)
-                location.replace("./src/pages/dashboard.html")
+                setTimeout(() => {
+                    location.replace("./src/pages/dashboard.html")
+                }, 2000);
             }else{
+                spiner.classList.add('displaySpiner')
                 throw new Error(responseToken.message);
             }
         }).catch(err=>{toast(`${err.message}`,"#8B0000")})    
